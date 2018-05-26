@@ -1,0 +1,59 @@
+{
+  "name": "RNDemo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-analytics": "file:./libraries/react-native-analytics"
+  },
+  "devDependencies": {
+    "babel-jest": "23.0.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "23.0.0",
+    "react-test-renderer": "16.3.1",
+    "@types/jest": "^21.1.1",
+		"@types/node": "^8.0.31",
+		"@types/prop-types": "^15.5.2",
+		"@types/react": "^16.0.7",
+		"@types/react-native": "^0.50.2",
+		"@types/react-native-elements": "^0.16.0",
+		"@types/react-navigation": "^1.0.22",
+		"@types/react-test-renderer": "^16.0.0",
+		"@types/rx": "^4.1.1",
+		"mobx-logger": "^0.6.0",
+    "react-native-typescript-transformer": "^1.1.4",
+    "remotedev-server": "^0.2.3",
+		"ts-jest": "^21.0.0",
+		"tslint": "^5.7.0",
+		"tslint-config-prettier": "^1.5.0",
+		"tslint-react": "^3.2.0",
+		"typescript": "^2.4.2"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+		  "ts",
+		  "tsx",
+		  "js",
+		  "jsx"
+		],
+		"transform": {
+		  "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+		  "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+		},
+		"testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+		"testPathIgnorePatterns": [
+		  "\\.snap$",
+		  "<rootDir>/node_modules/",
+		  "<rootDir>/lib/",
+		  "<rootDir>/.history",
+		  "<rootDir>/__tests__"
+		],
+		"cacheDirectory": ".jest/cache"
+	  }
+}
